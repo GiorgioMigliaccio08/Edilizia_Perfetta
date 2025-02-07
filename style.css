@@ -122,3 +122,31 @@ header button {
     margin-top: 50px;
   }
 }
+
+/* Main Section Up Part */
+
+.up {
+  display: flex;
+  flex-direction: row;
+}
+
+.navone {
+  display: flex;
+  margin-left: 380px;
+}
+.navone li {
+  margin-left: 20px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.navtwo {
+  display: flex;
+  margin-left: 180px;
+}
+
+.navtwo li {
+  margin-left: 20px;
+  list-style: none;
+  text-decoration: none;
+}
