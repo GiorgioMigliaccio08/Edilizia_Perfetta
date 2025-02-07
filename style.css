@@ -94,7 +94,7 @@ header button {
   }
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 1500px) {
   header h1 {
     color: white;
     padding-left: 10px;
