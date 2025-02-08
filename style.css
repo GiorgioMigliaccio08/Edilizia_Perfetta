@@ -124,6 +124,10 @@ header button {
 }
 
 /* Main Section Up Part */
+.navzero {
+  display: flex;
+  margin-left: 30px;
+}
 
 .up {
   display: flex;
@@ -132,17 +136,34 @@ header button {
 
 .navone {
   display: flex;
-  margin-left: 380px;
+  margin-left: 260px;
+}
+.logoimg {
+  width: 40px;
+}
+
+section h3 {
+  margin-left: 10px;
+  font-size: 20px;
+}
+.lower {
+  font-family: Georgia;
+  font-size: 10px;
+  color: #ffb900;
 }
 .navone li {
   margin-left: 20px;
   list-style: none;
   text-decoration: none;
+  margin-top: 15px;
+  color: rgb(78, 78, 78);
 }
 
 .navtwo {
   display: flex;
-  margin-left: 180px;
+  margin-left: 320px;
+  margin-top: 30px;
+  color: rgb(78, 78, 78);
 }
 
 .navtwo li {
