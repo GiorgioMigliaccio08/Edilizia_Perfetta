@@ -197,7 +197,7 @@ section h3 {
 }
 
 .right h2 {
-  margin-left: 250px;
+  display: flex;
   margin-top: 110px;
   font-size: 15px;
 }
@@ -258,4 +258,106 @@ section h3 {
   position: absolute;
   bottom: 20px;
   text-transform: uppercase;
+}
+
+/*PART CENTERTWO*/
+
+.navthree {
+  display: flex;
+}
+
+.navthree h2 {
+  display: flex;
+  margin-left: 300px;
+  margin-top: 110px;
+  font-size: 15px;
+}
+
+.navthree p {
+  margin-top: 110px;
+  margin-left: 650px;
+  color: #333;
+}
+
+.projectimg {
+  display: flex;
+}
+.rightone {
+  position: relative;
+  width: 520px;
+  height: 380px;
+}
+.marmo {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.lavoratori {
+  position: absolute;
+  top: 50%;
+  left: 85%;
+  transform: translate(-30%, -30%);
+  width: 70%;
+  border: 5px solid #ffb900;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.leftone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  margin-left: 240px;
+}
+
+.left-section {
+  width: 60%;
+  height: 35%;
+}
+
+.category {
+  color: #f5b400;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.leftone h1 {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.leftone p {
+  color: #666;
+  line-height: 1.2;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.right-section {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 18px;
+  font-weight: bold;
+  color: #bbb;
+}
+
+.right-section span {
+  margin: 5px 0;
+}
+
+.right-section span:first-child {
+  color: #f5b400;
 }
