@@ -54,6 +54,13 @@ header button {
   color: black;
   margin-left: 520px;
   margin-top: 50px;
+  cursor: pointer;
+}
+
+header button:hover {
+  background-color: #ffb900;
+  transform: scale(1.1);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 576px) {
@@ -160,16 +167,49 @@ section h3 {
 }
 
 .navtwo {
+  list-style: none;
   display: flex;
-  margin-left: 320px;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  margin-left: 240px;
   margin-top: 30px;
-  color: rgb(78, 78, 78);
+  color: #666;
 }
 
-.navtwo li {
-  margin-left: 20px;
+.language-dropdown {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
   list-style: none;
-  text-decoration: none;
+  padding: 10px 0;
+  margin: 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+  min-width: 120px;
+  z-index: 1000;
+}
+
+.dropdown li {
+  padding: 8px 15px;
+  white-space: nowrap;
+  transition: background 0.3s;
+}
+
+.dropdown li:hover {
+  background: #f5f5f5;
+}
+
+.language-dropdown:hover .dropdown {
+  display: block;
 }
 
 .center {
@@ -195,8 +235,14 @@ section h3 {
 .yellow {
   color: #ffb900;
 }
+.right {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0px;
+}
 
 .right h2 {
+  margin-right: 210px;
   display: flex;
   margin-top: 110px;
   font-size: 15px;
@@ -209,7 +255,7 @@ section h3 {
   text-align: center;
   gap: 50px;
   font-family: Arial;
-  margin-top: 40px;
+  margin-top: 90px;
 }
 
 .stat-box {
@@ -220,8 +266,11 @@ section h3 {
 }
 
 .stat-number {
+  font-family: "Quiksand", serif;
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 300;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .stat-label {
@@ -230,33 +279,52 @@ section h3 {
   text-transform: uppercase;
 }
 
+/* Immagine con numero*/
+
 .calendar {
-  width: 180px;
-  height: 220px;
-  margin-top: 90px;
-  margin-left: 130px;
+  width: 400px;
+  height: 500px;
   display: flex;
-  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 180px;
+}
+
+.frame {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  display: flex;
   justify-content: center;
   align-items: center;
-  border: 5px solid rgba(0, 0, 0, 0.2);
-  position: relative;
+  background: url(assets/img/Sfondo2.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.frame::before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.content {
+  position: absolute;
   text-align: center;
 }
-.text {
-  position: relative;
-  font-size: 80px;
+
+.number {
+  font-size: 120px;
   font-weight: bold;
-  color: transparent;
-  background: url() center/cover;
-  -webkit-background-clip: text;
-  background-clip: text;
+  color: rgba(0, 0, 0, 0.2);
+  position: relative;
+  mix-blend-mode: multiply;
 }
-.subtext {
-  font-size: 14px;
-  color: #333;
-  position: absolute;
-  bottom: 20px;
+
+.text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
   text-transform: uppercase;
 }
 
@@ -269,12 +337,12 @@ section h3 {
 .navthree h2 {
   display: flex;
   margin-left: 300px;
-  margin-top: 110px;
+  margin-top: 10px;
   font-size: 15px;
 }
 
 .navthree p {
-  margin-top: 110px;
+  margin-top: 10px;
   margin-left: 650px;
   color: #333;
 }
@@ -381,4 +449,87 @@ section h3 {
 .description p {
   margin-right: 10px;
   color: #666;
+}
+
+/*DOWN PART */
+
+.down {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  height: 500px;
+  background-color: #cbc4c4;
+}
+
+.down h2 {
+  font-size: 30px;
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+}
+.text {
+  color: #666;
+  display: flex;
+  justify-content: center;
+  font-size: small;
+}
+.down p {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.loghi {
+  display: flex;
+  justify-content: space-around;
+  filter: grayscale(100%);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 280px;
+  margin-right: 280px;
+}
+
+.loghi img {
+  width: 150px;
+  margin-right: 10px;
+}
+
+/* FOOTER */
+
+footer {
+  height: 220px;
+  background-image: url(https://png.pngtree.com/background/20230527/original/pngtree-3d-black-cubes-on-dark-background-picture-image_2761056.jpg);
+  display: flex;
+  justify-content: space-around;
+}
+
+.foterlogo {
+  display: flex;
+}
+
+.logofooter {
+  width: 50px;
+  height: 40px;
+  margin-top: 90px;
+  margin-left: 30px;
+  background-color: white;
+}
+
+.foterlogo h3 {
+  margin-top: 90px;
+  margin-left: 10px;
+}
+
+.reservation {
+  margin-top: 50px;
+}
+
+.logofooter {
+  background-color: white;
+  color: white;
+  width: 50px;
+}
+
+footer p {
+  line-height: 8px;
 }
