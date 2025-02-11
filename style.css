@@ -309,7 +309,7 @@ section h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 30%;
+  width: 28%;
   margin-left: 240px;
 }
 
@@ -360,4 +360,25 @@ section h3 {
 
 .right-section span:first-child {
   color: #f5b400;
+}
+
+.navfour h2 {
+  display: flex;
+  font-size: 15px;
+  margin-top: 80px;
+  margin-right: 340px;
+  margin-left: 800px;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.description p {
+  margin-right: 10px;
+  color: #666;
 }
