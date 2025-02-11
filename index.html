@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Edilizia Perfetta</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <header>
-      <img src="assets/img/header.jpg" alt="Sfondo Azienda" class="headerimg" />
+      <img src="assets/img/Sfondo2.jpg" alt="Sfondo Azienda" class="headerimg" />
       <h1>Innovation<span class="dot">.</span></h1>
       <p>
         We made the most advanced and user-friendy construction <br />theme in
@@ -29,7 +32,7 @@
         </div>
         <div>
           <ul class="navone">
-            <li>HOME</li>
+            <li style="color: #f5b400;">HOME</li>
             <li>PROJECT</li>
             <li>SERVICES</li>
             <li>ABOUT</li>
@@ -40,7 +43,16 @@
         <div>
           <ul class="navtwo">
             <li>GET A QUOTE</li>
-            <li>ENG ▼</li>
+            <li class="language-dropdown">
+              <span id="selected-language">ENG ▼</span>
+              <ul class="dropdown">
+                <li data-lang="ENG">🇬🇧 English</li>
+                <li data-lang="FR">🇫🇷 Français</li>
+                <li data-lang="DE">🇩🇪 Deutsch</li>
+                <li data-lang="ES">🇪🇸 Español</li>
+                <li data-lang="IT">🇮🇹 Italiano</li>
+              </ul>
+            </li>
           </ul>
         </div>
       </section>
@@ -76,8 +88,12 @@
         <div class="right">
           <h2> <hr style="border: 0.2px solid rgb(3, 3, 3); width: 20%" /> ABOUT <span class="yellow"> SUPERNOVA </span></h2>
           <div class="calendar">
-            <div class="text">15</div>
-            <div class="subtext">Years of experience in the industry</div>
+            <div class="frame">
+                <div class="content">
+                    <span class="number">15</span>
+                    <p class="text">YEARS OF EXPERIENCE <br> IN THE INDUSTRY</p>
+                </div>
+            </div>
         </div>
         </div>
       </section>
@@ -129,8 +145,45 @@
         </div>
 
       </section>
-      <section class="down"></section>
+      <section class="down">
+        <div>
+          <h2> <span class="yellow"> Supernova </span> theme is the best <br> for constrution</h2>
+          <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A quibusdam, ullam iste qui molestias excepturi aspernatur blanditiis eos reprehenderit sint pariatur,<br> delectus ea soluta, beatae tempora recusandae adipisci deserunt officia.Lorem ipsum dolor, sit amet consectetur adipisicing elit. A quibusdam,<br> ullam iste qui molestias excepturi aspernatur blanditiis eos reprehenderit sint pariatur,Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br> A quibusdam, ullam iste qui molestias excepturi aspernatur blanditiis eos reprehenderit sint pariatur,</p>
+          <p style="font-weight: bold;">George Lee - <span style="color: #666;">CEO of typo INC</span></p>
+        </div>
+      </section>
+      <div class="loghi">
+        <img src="assets/img/logoipsum-286.svg" alt="">
+        <img src="assets/img/logoipsum-288.svg" alt="">
+        <img src="assets/img/logoipsum-335.svg" alt="">
+        <img src="assets/img/logoipsum-336.svg" alt="">
+        <img src="assets/img/logoipsum-347.svg" alt="">
+      </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="foterlogo">
+        <img
+          src="assets/img/logoipsum-277.svg"
+          alt="Logo Azienda"
+          class="logofooter"
+        />
+        <h3 style="color:#a19b9b;">Supernova <br /><span  style="color: #f5b400;">Construction</span></h3>
+      </div>
+      <div class="reservation">
+        <p style="color: #f5b400;">Site map</p>
+        <p style="color:#a19b9b;">Term & Condition</p>
+        <p style="color:#a19b9b;">Privacy Policy</p>
+        <p style="color:#a19b9b;">Help</p>
+        <p style="color:#a19b9b;">Affiliate</p>
+      </div>
+      <div class="reservation"> 
+        <p style="color:#a19b9b;">Tutti i diritti riservati.</p>
+        <p style="color:#a19b9b;"> Edilizia Perfetta</p>
+      <p style="color: #f5b400;">© 2025 </p></div>
+      <div >
+        <img src="https://cdn.pixabay.com/photo/2018/03/19/02/52/logo-instagram-3238899_1280.png"class="logofooter">
+      </div>
+    </footer>
+    <script src="index.js"></script>
   </body>
 </html>
