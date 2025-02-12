@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   languageOptions.forEach((option) => {
     option.addEventListener("click", function () {
-      selectedLanguage.textContent = this.textContent.split(" ")[1] + " ▼";
+      selectedLanguage.textContent = this.textContent.split(" ")[1];
     });
   });
 });
