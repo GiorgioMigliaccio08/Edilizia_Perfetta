@@ -130,17 +130,36 @@ header button:hover {
   }
 }
 
-.writeline {
+.writeline,
+.writelineone,
+.navfour {
   display: flex;
 }
 
 .line {
   margin-top: 117px;
   margin-right: 40px;
-  margin-left: 90px;
+  margin-left: 55px;
   width: 100px;
   height: 1px;
   background-color: #666;
+}
+
+.lineone {
+  margin-top: 18px;
+  margin-left: 40px;
+  width: 100px;
+  height: 1px;
+  background-color: #666;
+}
+
+.linetre {
+  margin-top: 190px;
+  margin-left: 840px;
+  margin-right: 40px;
+  width: 100px;
+  height: 1px;
+  background-color: #666a;
 }
 
 /* Main Section Up Part */
@@ -156,7 +175,7 @@ header button:hover {
 
 .navone {
   display: flex;
-  margin-left: 260px;
+  margin-left: 300px;
 }
 .logoimg {
   width: 40px;
@@ -287,7 +306,7 @@ section h3 {
 }
 
 .stat-label {
-  font-size: 14px;
+  font-size: 10px;
   color: gray;
   text-transform: uppercase;
 }
@@ -299,7 +318,7 @@ section h3 {
   height: 500px;
   display: flex;
   margin-top: 50px;
-  margin-left: 180px;
+  margin-left: 150px;
 }
 
 .frame {
@@ -349,14 +368,14 @@ section h3 {
 
 .navthree h2 {
   display: flex;
-  margin-left: 300px;
+  margin-left: 290px;
   margin-top: 10px;
   font-size: 15px;
 }
 
 .navthree p {
   margin-top: 10px;
-  margin-left: 650px;
+  margin-left: 510px;
   color: #333;
 }
 
@@ -446,9 +465,8 @@ section h3 {
 .navfour h2 {
   display: flex;
   font-size: 15px;
-  margin-top: 80px;
-  margin-right: 340px;
-  margin-left: 800px;
+  margin-top: 180px;
+  margin-right: 100px;
 }
 
 .description {
@@ -484,6 +502,8 @@ section h3 {
   color: #666;
   display: flex;
   justify-content: center;
+  margin-left: 300px;
+  margin-right: 300px;
   font-size: small;
 }
 .down p {
