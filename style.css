@@ -130,6 +130,19 @@ header button:hover {
   }
 }
 
+.writeline {
+  display: flex;
+}
+
+.line {
+  margin-top: 117px;
+  margin-right: 40px;
+  margin-left: 90px;
+  width: 100px;
+  height: 1px;
+  background-color: #666;
+}
+
 /* Main Section Up Part */
 .navzero {
   display: flex;
