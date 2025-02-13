@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 body {
   margin: 0;
 }
@@ -5,7 +7,7 @@ body {
 header {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 88vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,10 +25,10 @@ header .headerimg {
 
 header h1 {
   color: white;
-  padding-left: 10px;
-  font-size: 6rem;
+  padding-left: 32px;
+  font-size: 5.5rem;
   margin: 0 auto;
-  font-family: Arial, sans-serif;
+  font-family: "Montserrat", serif;
 }
 
 .dot {
@@ -41,10 +43,10 @@ header p {
   padding-left: 520px;
   line-height: 30px;
   margin-top: 40px;
+  font-family: "Montserrat", serif;
 }
 
 header button {
-  font-weight: bold;
   width: 160px;
   height: 50px;
   border-radius: 2px;
@@ -55,79 +57,16 @@ header button {
   margin-left: 520px;
   margin-top: 50px;
   cursor: pointer;
+  font-family: "Montserrat", serif;
 }
 
 header button:hover {
+  font-weight: bold;
+  color: white;
   background-color: #ffb900;
   transform: scale(1.1);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 576px) {
-  header .headerimg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-  }
-  header h1 {
-    color: white;
-    padding-left: 10px;
-    padding-top: 100px;
-    font-size: 3rem;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-  }
-
-  header p {
-    color: white;
-    padding-top: 0;
-    font-size: 0.8rem;
-    padding-left: 50px;
-    line-height: 30px;
-    margin-top: 40px;
-  }
-
-  header button {
-    width: 110px;
-    height: 30px;
-    border-radius: 2px;
-    font-size: 0.6rem;
-    margin-left: 130px;
-    margin-top: 50px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1500px) {
-  header h1 {
-    color: white;
-    padding-left: 10px;
-    padding-top: 100px;
-    font-size: 6rem;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-  }
-
-  header p {
-    color: white;
-    padding-top: 0;
-    font-size: 1.3rem;
-    padding-left: 150px;
-    line-height: 30px;
-    margin-top: 40px;
-  }
-
-  header button {
-    width: 160px;
-    height: 60px;
-    border-radius: 2px;
-    font-size: 1rem;
-    margin-left: 150px;
-    margin-top: 50px;
-  }
+  box-shadow: 0 8px 12px white;
+  font-family: "Montserrat", serif;
 }
 
 .writeline,
@@ -146,7 +85,7 @@ header button:hover {
 }
 
 .lineone {
-  margin-top: 18px;
+  margin-top: 32px;
   margin-left: 40px;
   width: 100px;
   height: 1px;
@@ -166,6 +105,7 @@ header button:hover {
 .navzero {
   display: flex;
   margin-left: 30px;
+  justify-content: space-around;
 }
 
 .up {
@@ -175,27 +115,35 @@ header button:hover {
 
 .navone {
   display: flex;
-  margin-left: 300px;
+  margin-left: 265px;
 }
 .logoimg {
-  width: 40px;
+  width: 35px;
 }
 
 section h3 {
   margin-left: 10px;
-  font-size: 20px;
+  font-size: 18px;
+  font-family: "Montserrat", serif;
 }
 .lower {
   font-family: Georgia;
-  font-size: 10px;
+  font-size: 12px;
   color: #ffb900;
+  font-family: "Montserrat", serif;
 }
 .navone li {
   margin-left: 20px;
   list-style: none;
   text-decoration: none;
-  margin-top: 15px;
+  margin-top: 18px;
   color: rgb(78, 78, 78);
+  font-family: "Montserrat", serif;
+  cursor: pointer;
+}
+
+.navone li :hover {
+  color: black;
 }
 
 .navtwo {
@@ -203,12 +151,12 @@ section h3 {
   display: flex;
   gap: 20px;
   font-size: 16px;
-  font-weight: bold;
   cursor: pointer;
   position: relative;
-  margin-left: 240px;
-  margin-top: 30px;
+  margin-left: 230px;
+  margin-top: 36px;
   color: #666;
+  font-family: "Montserrat", serif;
 }
 
 .language-dropdown {
@@ -216,9 +164,9 @@ section h3 {
 }
 
 .dropdown {
+  font-family: "Montserrat", serif;
   position: absolute;
   top: 100%;
-  left: 0;
   background: white;
   list-style: none;
   padding: 10px 0;
@@ -231,6 +179,7 @@ section h3 {
 }
 
 .dropdown li {
+  font-family: "Montserrat", serif;
   padding: 8px 15px;
   white-space: nowrap;
   transition: background 0.3s;
@@ -257,34 +206,38 @@ section h3 {
 
 .left h1 {
   font-size: 31px;
+  font-family: "Montserrat", serif;
 }
 
 .left p {
   color: rgb(78, 78, 78);
   line-height: 20px;
+  font-family: "Montserrat", serif;
 }
 
 .yellow {
   color: #ffb900;
+  font-family: "Montserrat", serif;
 }
 .right {
   display: flex;
   flex-direction: column;
   margin-bottom: 0px;
+  font-family: "Montserrat", serif;
 }
 
 .right h2 {
   margin-right: 210px;
   display: flex;
   margin-top: 110px;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .stats-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  text-align: center;
+  justify-content: start;
+  text-align: start;
   gap: 50px;
   font-family: Arial;
   margin-top: 90px;
@@ -293,19 +246,21 @@ section h3 {
 .stat-box {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   margin-right: 30px;
 }
 
 .stat-number {
-  font-family: "Quiksand", serif;
-  font-size: 40px;
+  font-family: "Montserrat", serif;
+  font-size: 42px;
   font-weight: 300;
   font-optical-sizing: auto;
   font-style: normal;
 }
 
 .stat-label {
+  display: flex;
+  justify-content: start;
   font-size: 10px;
   color: gray;
   text-transform: uppercase;
@@ -334,30 +289,28 @@ section h3 {
 
 .frame::before {
   content: "";
-  position: absolute;
   width: 90%;
   height: 90%;
   background: rgba(255, 255, 255, 0.9);
 }
 
 .content {
+  margin-top: 40px;
+  margin-right: 60px;
   position: absolute;
   text-align: center;
 }
 
 .number {
-  font-size: 120px;
-  font-weight: bold;
-  color: rgba(0, 0, 0, 0.2);
-  position: relative;
-  mix-blend-mode: multiply;
+  font-family: "Montserrat", serif;
+  font-size: 80px;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .text {
-  font-size: 16px;
-  font-weight: bold;
+  font-family: "Montserrat", serif;
+  font-size: 5px;
   color: #666;
-  text-transform: uppercase;
 }
 
 /*PART CENTERTWO*/
@@ -368,14 +321,15 @@ section h3 {
 
 .navthree h2 {
   display: flex;
-  margin-left: 290px;
-  margin-top: 10px;
+  margin-left: 300px;
+  margin-top: 23px;
   font-size: 15px;
+  font-family: "Montserrat", serif;
 }
 
 .navthree p {
-  margin-top: 10px;
-  margin-left: 510px;
+  font-family: "Montserrat", serif;
+  margin-left: 450px;
   color: #333;
 }
 
