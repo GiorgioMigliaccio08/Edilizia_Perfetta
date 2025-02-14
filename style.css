@@ -363,6 +363,10 @@ section h3 {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+.lavoratori:hover {
+  width: 75%;
+}
+
 .leftone {
   font-family: "Montserrat", serif;
   display: flex;
@@ -460,7 +464,7 @@ section h3 {
   justify-content: center;
   margin-top: 80px;
   height: 500px;
-  background-color: #cbc4c4;
+  background-image: url(assets/img/thomas-heintz-0tgMnMIYQ9Y-unsplash.jpg);
 }
 
 .down h2 {
@@ -477,6 +481,8 @@ section h3 {
   margin-right: 20px;
 }
 .text {
+  font-family: "Montserrat", serif;
+  line-height: 30px;
   color: #666;
   display: flex;
   justify-content: center;
@@ -505,11 +511,15 @@ section h3 {
   margin-right: 10px;
 }
 
+.loghi img:hover {
+  width: 160px;
+}
+
 /* FOOTER */
 
 footer {
   height: 220px;
-  background-image: url(https://png.pngtree.com/background/20230527/original/pngtree-3d-black-cubes-on-dark-background-picture-image_2761056.jpg);
+  background-image: url(assets/img/maxim-berg-RP1ny6ItgAM-unsplash.jpg);
   display: flex;
   justify-content: space-around;
 }
@@ -521,13 +531,13 @@ footer {
 .logofooter {
   width: 50px;
   height: 40px;
-  margin-top: 90px;
+  margin-top: 63px;
   margin-left: 30px;
   background-color: white;
 }
 
 .foterlogo h3 {
-  margin-top: 90px;
+  margin-top: 60px;
   margin-left: 10px;
 }
 
@@ -545,4 +555,13 @@ footer {
 footer p {
   line-height: 8px;
   color: white;
+}
+
+.iconsocial svg {
+  margin-top: 55px;
+  fill: white;
+}
+.iconsocial svg:hover {
+  margin-top: 55px;
+  fill: #f5b400;
 }
