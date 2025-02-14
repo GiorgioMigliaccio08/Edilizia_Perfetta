@@ -283,7 +283,8 @@ section h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(assets/img/Sfondo2.jpg) no-repeat center;
+  background: url(assets/img/joakim-honkasalo-gKMxcHB3U3E-unsplash.jpg)
+    no-repeat center;
   background-size: cover;
 }
 
