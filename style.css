@@ -457,6 +457,73 @@ section h3 {
   margin-right: 50px;
 }
 
+.feedback-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.feedback-title {
+  font-family: "Montserrat", serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.feedback-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.feedback-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  height: 350px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border: 1px solid #f5b400;
+}
+
+.feedback-card:hover {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  height: 380px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border: 1px solid #f5b400;
+}
+
+.customer-photo {
+  width: 95%;
+  height: 60%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.customer-name {
+  font-family: "Montserrat", serif;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-left: 8px;
+  color: black;
+  display: flex;
+  justify-content: start;
+}
+
+.customer-comment {
+  font-family: "Montserrat", serif;
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  justify-content: start;
+}
+
 /*DOWN PART */
 
 .down {
