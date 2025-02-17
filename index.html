@@ -13,7 +13,7 @@
   </head>
 
   <body>
-    <header>
+    <header id="home">
       <img src="assets/img/joakim-honkasalo-gKMxcHB3U3E-unsplash.jpg" alt="Sfondo Azienda" class="headerimg" />
       <h1>Innovation<span class="dot">.</span></h1>
       <p>
@@ -34,12 +34,12 @@
         </div>
         <div>
           <ul class="navone">
-            <li style="color: #f5b400;">HOME</li>
-            <li>PROJECT</li>
-            <li>SERVICES</li>
-            <li>ABOUT</li>
-            <li>BLOG</li>
-            <li>CONTACT</li>
+            <li class="active" data-target="home">HOME</li>
+            <li data-target="project">PROJECT</li>
+            <li data-target="services">SERVICES</li>
+            <li data-target="about">ABOUT</li>
+            <li data-target="blog">BLOG</li>
+            <li data-target="contact">CONTACT</li>
           </ul>
         </div>
         <div>
@@ -104,7 +104,7 @@
         </div>
         </div>
       </section>
-      <section class="centertwo">
+      <section class="centertwo" id="project">
         <div class="navthree">
           <div class="writelineone">
             <h2>  OUR <span class="yellow" style="margin-left: 10px;" >  PROJECT </span>  </h2>
@@ -146,7 +146,7 @@
         </div>
         </div>
         </div>
-        <div class="navfour">
+        <div class="navfour" id="services">
           <div class="writeline">
             <div class="linetre"></div>
             <h2>  WHY CHOOSE <span class="yellow" style="margin-left: 10px;"> SUPERNOVA </span> </h2>
@@ -171,7 +171,7 @@
           </div>
         </div>
         
-        <section class="feedback-section">
+        <section class="feedback-section" id="about">
           <div class="writelinetwo">
             <h2>  WHAT OUR CLIENTS <span class="yellow" style="margin-left: 10px;" > SAY </span>  </h2>
             <div class="linetwo"></div>
@@ -200,7 +200,7 @@
       </section>
 
       </section>
-      <section class="down">
+      <section class="down" id="blog">
         <div>
           <h2> <span class="yellowone"> Supernova </span> theme is the best for constrution</h2>
           <p class="text">Designed for builders, architects, and contractors,
@@ -219,7 +219,7 @@
         <img src="assets/img/logoipsum-347.svg" alt="">
       </div>
     </main>
-    <footer>
+    <footer id="contact">
       <div class="foterlogo">
         <img
           src="assets/img/logoipsum-277.svg"
