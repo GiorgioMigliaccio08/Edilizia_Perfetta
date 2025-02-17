@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -29,6 +32,10 @@ header h1 {
   font-size: 5.5rem;
   margin: 0 auto;
   font-family: "Montserrat", serif;
+}
+
+header h1:hover {
+  font-size: 6.2rem;
 }
 
 .dot {
@@ -116,6 +123,22 @@ header button:hover {
 .navone {
   display: flex;
   margin-left: 265px;
+}
+
+.navone li {
+  list-style: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navone li:hover {
+  color: #ffb900;
+}
+
+.navone li.active {
+  color: #f5b900;
+  font-weight: bold;
 }
 .logoimg {
   width: 35px;
@@ -239,7 +262,7 @@ section h3 {
   justify-content: start;
   text-align: start;
   gap: 50px;
-  font-family: Arial;
+  font-family: "Montserrat", serif;
   margin-top: 90px;
 }
 
@@ -258,12 +281,20 @@ section h3 {
   font-style: normal;
 }
 
+.stat-number:hover {
+  color: #f5b900;
+}
+
 .stat-label {
   display: flex;
   justify-content: start;
   font-size: 10px;
   color: gray;
   text-transform: uppercase;
+}
+
+.stat-label:hover {
+  color: #f5b900;
 }
 
 /* Immagine con numero*/
