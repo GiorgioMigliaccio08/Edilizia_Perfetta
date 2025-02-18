@@ -156,7 +156,7 @@ section h3 {
   font-family: "Montserrat", serif;
 }
 .navone li {
-  margin-left: 20px;
+  margin-left: 25px;
   list-style: none;
   text-decoration: none;
   margin-top: 18px;
@@ -528,13 +528,8 @@ section h3 {
 }
 
 .feedback-card:hover {
-  background: white;
-  padding: 20px;
   width: 270px;
   height: 330px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  border: 1px solid #f5b400;
 }
 
 .customer-photo {
