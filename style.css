@@ -365,7 +365,7 @@ section h3 {
 
 .navthree p {
   font-family: "Montserrat", serif;
-  margin-left: 450px;
+  margin-left: 435px;
   color: #333;
 }
 
@@ -514,7 +514,7 @@ section h3 {
   gap: 20px;
   flex-wrap: wrap;
   margin-top: 70px;
-  margin-right: 35px;
+  margin-right: 40px;
 }
 
 .feedback-card {
