@@ -9,11 +9,28 @@
     margin: 0;
   }
 
+  header {
+    position: relative;
+    width: 100%;
+    height: 91vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   header p {
     padding-left: 710px;
   }
 
   header button {
     margin-left: 710px;
+  }
+
+  .navone {
+    margin-left: 470px;
+  }
+
+  .navtwo {
+    margin-left: 400px;
   }
 }
