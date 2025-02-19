@@ -37,4 +37,34 @@
   .center {
     margin-left: 220px;
   }
+
+  .navthree h2 {
+    margin-left: 515px;
+  }
+
+  .rightone {
+    position: relative;
+    width: 660px;
+    height: 400px;
+  }
+  .marmo {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 94.5px;
+  }
+
+  .lavoratori {
+    position: absolute;
+    top: 63%;
+    left: 75%;
+    transform: translate(-30%, -30%);
+    width: 70%;
+    border: 5px solid #ffb900;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .leftone {
+    margin-top: 30px;
+  }
 }
