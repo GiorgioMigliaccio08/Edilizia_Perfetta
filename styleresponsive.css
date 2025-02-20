@@ -1,7 +1,12 @@
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1800px) {
   @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-  html {
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
     scroll-behavior: smooth;
   }
 
@@ -15,9 +20,6 @@
 
   header .headerimg {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
     width: 100vw;
     height: 100%;
     object-fit: cover;
@@ -25,11 +27,11 @@
   }
 
   header p {
-    padding-left: 710px;
+    margin-left: 200px;
   }
 
   header button {
-    margin-left: 710px;
+    margin-left: 720px;
   }
 
   .navone {
@@ -39,7 +41,7 @@
     margin-right: 500px;
   }
   .navtwo {
-    margin-left: 400px;
+    margin-left: 370px;
   }
 
   .center {
@@ -47,7 +49,11 @@
   }
 
   .writeline {
-    margin-left: 0px;
+    display: none;
+  }
+
+  .calendar {
+    margin-top: 210px;
   }
 
   .navthree h2 {
@@ -87,6 +93,7 @@
   .description {
     margin-left: 480px;
     margin-right: 450px;
+    margin-top: 200px;
   }
 
   .writelinetwo {
