@@ -17,6 +17,7 @@
   .left {
     padding: 0;
     margin: 0;
+    margin-bottom: 0;
   }
 
   .left h1 {
@@ -49,11 +50,6 @@
     font-size: 10px;
   }
 
-  .writeline {
-    padding: 0;
-    margin: 0;
-  }
-
   .line {
     width: 60px;
     height: 1px;
@@ -66,5 +62,66 @@
     display: flex;
     margin-top: 60px;
     margin-left: 180px;
+  }
+
+  .writelineone h2 {
+    margin-left: 30px;
+  }
+
+  .navthree p {
+    margin-left: 270px;
+  }
+
+  .projectimg {
+    margin: 0;
+    padding: 0;
+  }
+
+  .rightone {
+    position: relative;
+    width: 400px;
+    height: 250px;
+  }
+  .marmo {
+    width: 95%;
+    height: 100%;
+    display: block;
+    margin-top: 75px;
+  }
+
+  .lavoratori {
+    top: 65%;
+    left: 60%;
+    width: 70%;
+    height: 75%;
+  }
+
+  .leftone {
+    width: 35%;
+    margin-left: 100px;
+  }
+
+  .left-section {
+    width: 100%;
+    height: 25%;
+  }
+
+  .leftone h1 {
+    font-size: 12px;
+    margin: 10px 0;
+  }
+
+  .leftone p {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.2;
+  }
+
+  .right-section {
+    line-height: 30px;
+    width: 20%;
+    margin-top: 110px;
+    font-size: 18px;
+    margin-left: 50px;
   }
 }
