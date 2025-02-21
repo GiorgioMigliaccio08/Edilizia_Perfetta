@@ -1,0 +1,70 @@
+@media screen and (min-width: 820px) and (max-width: 1080px) {
+  header h1 {
+    font-size: 4.5rem;
+  }
+
+  header p {
+    font-size: 1rem;
+    padding: 0;
+    margin-left: 210px;
+  }
+
+  header button {
+    padding: 0;
+    margin-left: 210px;
+  }
+
+  .left {
+    padding: 0;
+    margin: 0;
+  }
+
+  .left h1 {
+    font-size: 25px;
+    margin-top: 110px;
+    margin-left: 30px;
+  }
+
+  .left p {
+    margin-left: 30px;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+
+  .stats-container {
+    gap: 30px;
+    margin-top: 80px;
+    margin-left: 30px;
+  }
+
+  .stat-box {
+    margin-right: 15px;
+  }
+
+  .stat-number {
+    font-size: 38px;
+  }
+
+  .stat-label {
+    font-size: 10px;
+  }
+
+  .writeline {
+    padding: 0;
+    margin: 0;
+  }
+
+  .line {
+    width: 60px;
+    height: 1px;
+    margin-left: 100px;
+  }
+
+  .calendar {
+    width: 350px;
+    height: 450px;
+    display: flex;
+    margin-top: 60px;
+    margin-left: 180px;
+  }
+}
