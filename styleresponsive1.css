@@ -124,4 +124,20 @@
     font-size: 18px;
     margin-left: 50px;
   }
+
+  .linetre {
+    margin-left: 370px;
+  }
+
+  .navfour h2 {
+    font-size: 15px;
+  }
+
+  .description {
+    margin: 0px;
+  }
+
+  .contenitore {
+    margin-left: 35px;
+  }
 }
