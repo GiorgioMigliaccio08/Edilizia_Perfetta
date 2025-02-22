@@ -1,4 +1,7 @@
 @media screen and (min-width: 820px) and (max-width: 1080px) {
+  body {
+    overflow-x: hidden;
+  }
   header h1 {
     font-size: 4.5rem;
   }
@@ -14,6 +17,35 @@
     margin-left: 210px;
   }
 
+  .up h3 {
+    margin-top: 105px;
+  }
+
+  .navzero {
+    margin-left: 60px;
+  }
+
+  .navone {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+  }
+
+  .navone li {
+    margin-left: 15px;
+  }
+
+  .navtwo {
+    gap: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    margin-left: 60px;
+    margin-top: 110px;
+    color: #666;
+    font-family: "Montserrat", serif;
+  }
+
   .left {
     padding: 0;
     margin: 0;
@@ -22,7 +54,7 @@
 
   .left h1 {
     font-size: 25px;
-    margin-top: 110px;
+    margin-top: 130px;
     margin-left: 30px;
   }
 
@@ -62,6 +94,7 @@
     display: flex;
     margin-top: 60px;
     margin-left: 180px;
+    padding-right: 0px;
   }
 
   .writelineone h2 {
@@ -125,11 +158,19 @@
     margin-left: 50px;
   }
 
-  .linetre {
-    margin-left: 370px;
+  .writeline {
+    margin: 0;
+    padding: 0;
+  }
+
+  .linetre,
+  .linetwo {
+    display: none;
   }
 
   .navfour h2 {
+    margin-left: 280px;
+    margin-bottom: 30px;
     font-size: 15px;
   }
 
@@ -139,5 +180,47 @@
 
   .contenitore {
     margin-left: 35px;
+  }
+
+  .feedback-card {
+    margin-left: 15px;
+    padding: 15px;
+    width: 180px;
+    height: 300px;
+  }
+
+  .customer-photo {
+    width: 95%;
+    height: 50%;
+    margin-bottom: 10px;
+  }
+
+  .down h2 {
+    margin-top: 120px;
+    font-size: 20px;
+  }
+
+  .text {
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 25px;
+    color: #666;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+  }
+  .down p {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .loghi {
+    margin-left: 70px;
+  }
+
+  .loghi img {
+    width: 120px;
+    margin-right: 20px;
   }
 }
