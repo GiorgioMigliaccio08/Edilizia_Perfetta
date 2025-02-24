@@ -256,6 +256,37 @@
     background: white;
     padding: 20px;
     width: 150px;
-    height: 200px;
+    height: 240px;
+  }
+
+  .customer-name {
+    margin-top: 2px;
+    font-size: 12px;
+  }
+
+  .customer-comment {
+    font-size: 11px;
+  }
+  .down {
+    margin: 0;
+    display: flex;
+    margin-top: 90px;
+    height: 650px;
+    width: 70%;
+  }
+  .down h2 {
+    display: none;
+  }
+
+  .text {
+    font-size: 15px;
+    width: 20%;
+    height: 50%;
+    margin-right: 360px;
+  }
+
+  .down p {
+    font-size: 13px;
+    margin-top: 90px;
   }
 }
