@@ -111,12 +111,16 @@
     display: none;
   }
   .calendar {
-    width: 400px;
-    height: 500px;
-    margin-top: 60px;
+    width: 300px;
+    height: 400px;
+    margin-top: 130px;
     margin-left: 55px;
     margin-bottom: 0;
     padding-bottom: 0;
+  }
+
+  .number {
+    font-size: 60px;
   }
 
   .frame {
@@ -125,7 +129,7 @@
   }
 
   .navthree h2 {
-    margin-right: 190px;
+    margin-right: 230px;
   }
 
   .lineone {
@@ -133,7 +137,7 @@
   }
 
   .writelineone h2 {
-    margin-left: 100px;
+    margin-left: 70px;
   }
 
   .projectimg {
@@ -142,8 +146,8 @@
   }
   .rightone {
     position: relative;
-    width: 250px;
-    height: 200px;
+    width: 220px;
+    height: 170px;
   }
   .marmo {
     width: 100%;
@@ -158,7 +162,7 @@
     left: 60%;
     transform: translate(-30%, -30%);
     width: 70%;
-    border: 5px solid #ffb900;
+    border: 3px solid #ffb900;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   }
 
@@ -173,24 +177,32 @@
 
   .projectimg {
     display: flex;
+    margin-bottom: 0;
   }
 
   .category {
-    margin-top: 30px;
+    margin-top: 10px;
+    margin-left: 39px;
   }
 
   .leftone h1 {
-    font-size: 20px;
-    margin-left: 20px;
+    font-size: 15px;
+    margin-left: 40px;
   }
 
   .left-section {
-    width: 1200px;
+    width: 1000px;
   }
 
   .left-section p {
-    margin-left: 20px;
-    font-size: 10px;
+    font-size: 12px;
+    width: 90%;
+    margin-left: 40px;
+  }
+
+  .project-link {
+    font-size: 8px;
+    margin-left: 40px;
   }
 
   .right-section {
@@ -212,19 +224,38 @@
   .contenitore {
     margin-left: 20px;
   }
+  .contenitore h1 {
+    font-size: 15px;
+  }
+  .contenitore p {
+    font-size: 12px;
+    line-height: 15px;
+    margin-right: 100px;
+  }
 
   .writelinetwo {
     margin: 0;
   }
+  .writelinetwo h2 {
+    font-size: 13px;
+  }
 
+  .linetwo {
+    display: none;
+  }
+
+  .feedback-container {
+    margin: 0;
+  }
   .feedback-card {
-    margin-left: 10px;
+    margin-top: 20px;
+    margin-right: 130px;
   }
 
   .feedback-card {
     background: white;
     padding: 20px;
-    width: 205px;
-    height: 300px;
+    width: 150px;
+    height: 200px;
   }
 }
