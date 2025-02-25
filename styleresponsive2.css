@@ -301,4 +301,10 @@
     margin-left: 50px;
     margin-bottom: 20px;
   }
+
+  footer {
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+  }
 }
