@@ -289,4 +289,16 @@
     font-size: 13px;
     margin-top: 90px;
   }
+
+  .loghi {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .loghi img {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+  }
 }
