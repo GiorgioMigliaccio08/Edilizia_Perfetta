@@ -142,7 +142,7 @@
   }
 
   .writelineone h2 {
-    margin-left: 135px;
+    margin-left: 65px;
   }
 
   .projectimg {
@@ -245,7 +245,7 @@
   }
   .writelinetwo h2 {
     font-size: 15px;
-    margin-left: 75px;
+    margin-left: 35px;
   }
 
   .linetwo {
@@ -324,7 +324,7 @@
     width: 45px;
     height: 35px;
     margin-top: 63px;
-    margin-left: 50px;
+    margin-left: 130px;
     background-color: white;
   }
 
@@ -337,11 +337,11 @@
   .reservation {
     font-size: 15px;
     margin-top: 50px;
-    margin-left: 53px;
+    margin-left: 130px;
   }
 
   .iconsocial {
-    margin-left: 50px;
+    margin-left: 130px;
   }
 
   .iconsocial svg {
