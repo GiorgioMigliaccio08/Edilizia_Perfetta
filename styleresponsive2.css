@@ -17,13 +17,13 @@
 
   header h1 {
     margin-top: 390px;
-    margin-left: 70px;
+    margin-left: 75px;
     font-size: 2rem;
   }
 
   header button {
     position: absolute;
-    margin-left: 150px;
+    margin-left: 155px;
     margin-top: 60px;
     width: 90px;
     height: 35px;
@@ -40,7 +40,7 @@
   }
 
   .navzero img {
-    margin-left: 10px;
+    margin-left: 85px;
   }
 
   .navzero h3 {
@@ -82,30 +82,30 @@
   }
 
   .left h1 {
-    font-size: 15px;
-    margin-left: 20px;
+    font-size: 18px;
+    margin-left: 50px;
     margin-top: 55px;
   }
 
   .left p {
-    font-size: 12px;
-    margin: 30px 150px 0px 20px;
+    font-size: 15px;
+    margin: 30px 20px 0px 50px;
   }
   .stats-container {
-    margin-left: 20px;
+    margin-left: 50px;
   }
   .stat-box {
     width: 10px;
-    margin-right: 1px;
+    margin-right: 20px;
   }
 
   .stat-number {
-    font-size: 13px;
+    font-size: 30px;
     font-weight: 300;
   }
 
   .stat-label {
-    font-size: 7px;
+    font-size: 10px;
   }
   .right {
     margin-bottom: 0;
