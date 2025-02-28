@@ -1,4 +1,40 @@
+/* Animazioni per la parte sinistra */
 @keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100vw); /* Sposta fuori dalla vista a sinistra */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animazioni per la parte destra */
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100vw); /* Sposta fuori dalla vista a destra */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animazione dell'header */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeftHeader {
   from {
     opacity: 0;
     transform: translateX(-50px);
@@ -9,18 +45,7 @@
   }
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInRight {
+@keyframes fadeInRightHeader {
   from {
     opacity: 0;
     transform: translateX(50px);
@@ -31,20 +56,89 @@
   }
 }
 
-/* Rallentiamo l'animazione aumentando la durata */
+/* Inizialmente gli elementi sono invisibili */
+#home h1,
+#home p,
+#home button {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.center .left h1,
+.center .left p,
+.center .left .stat-box {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.center .right .writeline,
+.center .right .calendar {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Animazione per l'header */
 #home h1.visible {
-  animation: fadeInLeft 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation: fadeInLeftHeader 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
   visibility: visible;
 }
 
 #home p.visible {
   animation: fadeInUp 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-  animation-delay: 0.5s; /* Ritardo più lungo */
   visibility: visible;
+  animation-delay: 0.3s;
 }
 
 #home button.visible {
-  animation: fadeInRight 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-  animation-delay: 1s; /* Ritardo ancora maggiore */
+  animation: fadeInRightHeader 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
   visibility: visible;
+  animation-delay: 0.6s;
+}
+
+/* Animazione per la parte sinistra */
+.center .left h1.visible,
+.center .left p.visible,
+.center .left .stat-box.visible {
+  animation: fadeInLeft 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  visibility: visible;
+}
+
+/* Animazione per la parte destra */
+.center .right .writeline.visible,
+.center .right .calendar.visible {
+  animation: fadeInRight 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  visibility: visible;
+}
+
+/* Ritardi progressivi per gli elementi */
+#home h1.visible {
+  animation-delay: 0.2s;
+}
+
+#home p.visible {
+  animation-delay: 0.5s;
+}
+
+#home button.visible {
+  animation-delay: 0.8s;
+}
+
+.center .left h1.visible {
+  animation-delay: 0.2s;
+}
+
+.center .left p.visible {
+  animation-delay: 0.5s;
+}
+
+.center .left .stat-box.visible {
+  animation-delay: 0.8s;
+}
+
+.center .right .writeline.visible {
+  animation-delay: 0.3s;
+}
+
+.center .right .calendar.visible {
+  animation-delay: 0.6s;
 }
