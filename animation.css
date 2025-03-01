@@ -2,7 +2,7 @@
 @keyframes fadeInLeft {
   from {
     opacity: 0;
-    transform: translateX(-100vw); /* Sposta fuori dalla vista a sinistra */
+    transform: translateX(-100vw); /* Fuori dallo schermo a sinistra */
   }
   to {
     opacity: 1;
@@ -14,7 +14,7 @@
 @keyframes fadeInRight {
   from {
     opacity: 0;
-    transform: translateX(100vw); /* Sposta fuori dalla vista a destra */
+    transform: translateX(100vw); /* Fuori dallo schermo a destra */
   }
   to {
     opacity: 1;
@@ -22,11 +22,11 @@
   }
 }
 
-/* Animazione dell'header */
+/* Animazioni per l'ingresso dal basso */
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(50px);
   }
   to {
     opacity: 1;
@@ -34,52 +34,31 @@
   }
 }
 
-@keyframes fadeInLeftHeader {
-  from {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeInRightHeader {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-/* Inizialmente gli elementi sono invisibili */
+/* Inizialmente nascondiamo tutti gli elementi */
 #home h1,
 #home p,
-#home button {
-  opacity: 0;
-  visibility: hidden;
-}
-
+#home button,
 .center .left h1,
 .center .left p,
-.center .left .stat-box {
-  opacity: 0;
-  visibility: hidden;
-}
-
+.center .left .stat-box,
 .center .right .writeline,
-.center .right .calendar {
+.center .right .calendar,
+.navthree .writelineone h2,
+.navthree p,
+.projectimg .rightone,
+.projectimg .leftone .left-section,
+.projectimg .leftone .right-section,
+.navfour .writeline h2,
+.description .contenitore:nth-child(1),
+.description .contenitore:nth-child(2),
+.description .contenitore:nth-child(3) {
   opacity: 0;
   visibility: hidden;
 }
 
 /* Animazione per l'header */
 #home h1.visible {
-  animation: fadeInLeftHeader 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation: fadeInLeft 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
   visibility: visible;
 }
 
@@ -90,55 +69,53 @@
 }
 
 #home button.visible {
-  animation: fadeInRightHeader 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation: fadeInRight 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
   visibility: visible;
   animation-delay: 0.6s;
 }
 
-/* Animazione per la parte sinistra */
+/* Animazione per la sezione center */
 .center .left h1.visible,
 .center .left p.visible,
-.center .left .stat-box.visible {
+.center .left .stat-box.visible,
+.projectimg .leftone .left-section.visible,
+.projectimg .leftone .right-section.visible,
+.navthree p.visible,
+.navfour .writeline h2.visible,
+.description .contenitore:nth-child(3).visible {
   animation: fadeInLeft 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
   visibility: visible;
 }
 
-/* Animazione per la parte destra */
+/* Elementi che entrano da destra */
 .center .right .writeline.visible,
-.center .right .calendar.visible {
+.center .right .calendar.visible,
+.navthree .writelineone h2.visible,
+.projectimg .rightone.visible,
+.description .contenitore:nth-child(1).visible {
   animation: fadeInRight 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
   visibility: visible;
 }
 
-/* Ritardi progressivi per gli elementi */
-#home h1.visible {
+/* Elemento che entra dal basso */
+.description .contenitore:nth-child(2).visible {
+  animation: fadeInUp 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  visibility: visible;
+}
+
+/* Ritardi progressivi */
+.navfour .writeline h2.visible {
   animation-delay: 0.2s;
 }
 
-#home p.visible {
-  animation-delay: 0.5s;
-}
-
-#home button.visible {
-  animation-delay: 0.8s;
-}
-
-.center .left h1.visible {
-  animation-delay: 0.2s;
-}
-
-.center .left p.visible {
-  animation-delay: 0.5s;
-}
-
-.center .left .stat-box.visible {
-  animation-delay: 0.8s;
-}
-
-.center .right .writeline.visible {
+.description .contenitore:nth-child(1).visible {
   animation-delay: 0.3s;
 }
 
-.center .right .calendar.visible {
-  animation-delay: 0.6s;
+.description .contenitore:nth-child(2).visible {
+  animation-delay: 0.5s;
+}
+
+.description .contenitore:nth-child(3).visible {
+  animation-delay: 0.7s;
 }
