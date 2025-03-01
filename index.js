@@ -32,47 +32,36 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Selezioniamo gli elementi dell'header
+  // Selezioniamo tutti gli elementi da animare
   const headerElements = document.querySelectorAll(
     "#home h1, #home p, #home button"
   );
-
-  // Selezioniamo tutti gli elementi della parte sinistra e destra
   const leftElements = document.querySelectorAll(
-    ".center .left h1, .center .left p, .center .left .stat-box"
+    ".center .left h1, .center .left p, .center .left .stat-box, .projectimg .leftone .left-section, .projectimg .leftone .right-section, .navthree p, .navfour .writeline h2, .description .contenitore:nth-child(3)"
   );
   const rightElements = document.querySelectorAll(
-    ".center .right .writeline, .center .right .calendar"
+    ".center .right .writeline, .center .right .calendar, .navthree .writelineone h2, .projectimg .rightone, .description .contenitore:nth-child(1)"
+  );
+  const bottomElements = document.querySelectorAll(
+    ".description .contenitore:nth-child(2)"
   );
 
-  // Creiamo l'IntersectionObserver
+  // Creiamo un IntersectionObserver
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          // Aggiungiamo la classe "visible" quando l'elemento è visibile
           entry.target.classList.add("visible");
-
-          // Dopo che l'elemento è stato animato, smettiamo di osservare l'elemento
-          observer.unobserve(entry.target);
+          observer.unobserve(entry.target); // Interrompi l'osservazione dopo l'animazione
         }
       });
     },
     { threshold: 0.3 }
-  ); // L'elemento viene considerato visibile quando il 30% è visibile
+  );
 
-  // Osserviamo ogni singolo elemento dell'header
-  headerElements.forEach((el) => {
-    observer.observe(el);
-  });
-
-  // Osserviamo ogni singolo elemento della parte sinistra
-  leftElements.forEach((el) => {
-    observer.observe(el);
-  });
-
-  // Osserviamo ogni singolo elemento della parte destra
-  rightElements.forEach((el) => {
-    observer.observe(el);
-  });
+  // Osserviamo tutti gli elementi selezionati
+  headerElements.forEach((el) => observer.observe(el));
+  leftElements.forEach((el) => observer.observe(el));
+  rightElements.forEach((el) => observer.observe(el));
+  bottomElements.forEach((el) => observer.observe(el));
 });
