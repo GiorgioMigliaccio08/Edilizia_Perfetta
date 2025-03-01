@@ -34,7 +34,99 @@
   }
 }
 
-/* Inizialmente nascondiamo tutti gli elementi */
+/* Animazioni per l'header della sezione feedback */
+@keyframes fadeInLeftAbout {
+  from {
+    opacity: 0;
+    transform: translateX(-100vw); /* Fuori dallo schermo a sinistra */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animazioni per le card di feedback */
+@keyframes fadeInLeftCard {
+  from {
+    opacity: 0;
+    transform: translateX(-50px); /* Entra da sinistra */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRightCard {
+  from {
+    opacity: 0;
+    transform: translateX(50px); /* Entra da destra */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUpCard {
+  from {
+    opacity: 0;
+    transform: translateY(50px); /* Entra dal basso */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animazioni per la sezione blog */
+@keyframes fadeInLeftBlog {
+  from {
+    opacity: 0;
+    transform: translateX(-100vw); /* Entra da sinistra */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRightBlog {
+  from {
+    opacity: 0;
+    transform: translateX(100vw); /* Entra da destra */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUpBlog {
+  from {
+    opacity: 0;
+    transform: translateY(50px); /* Entra dal basso */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animazioni per la sezione loghi */
+@keyframes fadeInLogos {
+  from {
+    opacity: 0;
+    transform: translateY(30px); /* Entra dal basso */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Nascondiamo inizialmente gli elementi */
 #home h1,
 #home p,
 #home button,
@@ -51,7 +143,13 @@
 .navfour .writeline h2,
 .description .contenitore:nth-child(1),
 .description .contenitore:nth-child(2),
-.description .contenitore:nth-child(3) {
+.description .contenitore:nth-child(3),
+.feedback-section h2,
+.feedback-section .feedback-card,
+.down h2,
+.down p,
+.down .text,
+.loghi img {
   opacity: 0;
   visibility: hidden;
 }
@@ -103,19 +201,62 @@
   visibility: visible;
 }
 
-/* Ritardi progressivi */
-.navfour .writeline h2.visible {
-  animation-delay: 0.2s;
+/* Animazione per l'header della sezione feedback */
+.feedback-section h2.visible {
+  animation: fadeInLeftAbout 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  visibility: visible;
 }
 
-.description .contenitore:nth-child(1).visible {
+/* Animazioni per le card di feedback */
+.feedback-section .feedback-card:nth-child(1).visible {
+  animation: fadeInLeftCard 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  visibility: visible;
+}
+
+.feedback-section .feedback-card:nth-child(2).visible {
+  animation: fadeInRightCard 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  visibility: visible;
+}
+
+.feedback-section .feedback-card:nth-child(3).visible {
+  animation: fadeInUpCard 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  visibility: visible;
+}
+
+/* Ritardi progressivi per le card */
+.feedback-section .feedback-card:nth-child(1).visible {
   animation-delay: 0.3s;
 }
 
-.description .contenitore:nth-child(2).visible {
+.feedback-section .feedback-card:nth-child(2).visible {
   animation-delay: 0.5s;
 }
 
-.description .contenitore:nth-child(3).visible {
+.feedback-section .feedback-card:nth-child(3).visible {
   animation-delay: 0.7s;
+}
+
+/* Animazioni per la sezione blog */
+.down h2.visible {
+  animation: fadeInLeftBlog 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  visibility: visible;
+}
+
+.down p.visible {
+  animation: fadeInRightBlog 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  visibility: visible;
+  animation-delay: 0.3s;
+}
+
+.down .text.visible {
+  animation: fadeInUpBlog 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  visibility: visible;
+  animation-delay: 0.6s;
+}
+
+/* Animazione per i loghi */
+.loghi img.visible {
+  animation: fadeInLogos 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  visibility: visible;
+  animation-delay: 0.8s;
 }
