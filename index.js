@@ -46,6 +46,20 @@ document.addEventListener("DOMContentLoaded", () => {
     ".description .contenitore:nth-child(2)"
   );
 
+  // Selezioniamo gli elementi della sezione feedback
+  const feedbackHeader = document.querySelector(".feedback-section h2");
+  const feedbackCards = document.querySelectorAll(
+    ".feedback-section .feedback-card"
+  );
+
+  // Selezioniamo gli elementi della sezione blog
+  const blogTitle = document.querySelector(".down h2");
+  const blogText = document.querySelector(".down p");
+  const blogCEO = document.querySelector(".down .text");
+
+  // Selezioniamo gli elementi della sezione loghi
+  const logos = document.querySelectorAll(".loghi img");
+
   // Creiamo un IntersectionObserver
   const observer = new IntersectionObserver(
     (entries) => {
@@ -64,4 +78,16 @@ document.addEventListener("DOMContentLoaded", () => {
   leftElements.forEach((el) => observer.observe(el));
   rightElements.forEach((el) => observer.observe(el));
   bottomElements.forEach((el) => observer.observe(el));
+
+  // Osserviamo la sezione feedback
+  observer.observe(feedbackHeader);
+  feedbackCards.forEach((el) => observer.observe(el));
+
+  // Osserviamo la sezione blog
+  observer.observe(blogTitle);
+  observer.observe(blogText);
+  observer.observe(blogCEO);
+
+  // Osserviamo la sezione loghi
+  logos.forEach((el) => observer.observe(el));
 });
