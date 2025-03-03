@@ -31,83 +31,6 @@
   }
 }
 
-@keyframes fadeInLeftAbout {
-  from {
-    opacity: 0;
-    transform: translateX(-100vw);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeInLeftCard {
-  from {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeInRightCard {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeInUpCard {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInLeftBlog {
-  from {
-    opacity: 0;
-    transform: translateX(-100vw);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeInRightBlog {
-  from {
-    opacity: 0;
-    transform: translateX(100vw);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeInUpBlog {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 @keyframes fadeInLogos {
   from {
     opacity: 0;
@@ -133,15 +56,16 @@
 .projectimg .leftone .left-section,
 .projectimg .leftone .right-section,
 .navfour .writeline h2,
-.description .contenitore:nth-child(1),
-.description .contenitore:nth-child(2),
-.description .contenitore:nth-child(3),
+.description .contenitore,
 .feedback-section h2,
 .feedback-section .feedback-card,
 .down h2,
 .down p,
 .down .text,
-.loghi img {
+.loghi img,
+#contact .foterlogo,
+#contact .reservation,
+#contact .iconsocial {
   opacity: 0;
   visibility: hidden;
 }
@@ -190,55 +114,49 @@
 }
 
 .feedback-section h2.visible {
-  animation: fadeInLeftAbout 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation: fadeInLeft 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
   visibility: visible;
 }
 
 .feedback-section .feedback-card:nth-child(1).visible {
-  animation: fadeInLeftCard 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation: fadeInLeft 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
   visibility: visible;
-}
-
-.feedback-section .feedback-card:nth-child(2).visible {
-  animation: fadeInRightCard 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-  visibility: visible;
-}
-
-.feedback-section .feedback-card:nth-child(3).visible {
-  animation: fadeInUpCard 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-  visibility: visible;
-}
-
-.feedback-section .feedback-card:nth-child(1).visible {
   animation-delay: 0.3s;
 }
 
 .feedback-section .feedback-card:nth-child(2).visible {
+  animation: fadeInRight 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  visibility: visible;
   animation-delay: 0.5s;
 }
 
 .feedback-section .feedback-card:nth-child(3).visible {
+  animation: fadeInUp 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  visibility: visible;
   animation-delay: 0.7s;
 }
 
 .down h2.visible {
-  animation: fadeInLeftBlog 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation: fadeInLeft 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
   visibility: visible;
 }
 
 .down p.visible {
-  animation: fadeInRightBlog 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation: fadeInRight 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
   visibility: visible;
   animation-delay: 0.3s;
 }
 
 .down .text.visible {
-  animation: fadeInUpBlog 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation: fadeInUp 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
   visibility: visible;
   animation-delay: 0.6s;
 }
 
-.loghi img.visible {
+.loghi img.visible,
+#contact .foterlogo.visible,
+#contact .reservation.visible,
+#contact .iconsocial.visible {
   animation: fadeInLogos 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
   visibility: visible;
   animation-delay: 0.8s;
