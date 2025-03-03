@@ -1,8 +1,7 @@
-/* Animazioni per la parte sinistra */
 @keyframes fadeInLeft {
   from {
     opacity: 0;
-    transform: translateX(-100vw); /* Fuori dallo schermo a sinistra */
+    transform: translateX(-100vw);
   }
   to {
     opacity: 1;
@@ -10,11 +9,10 @@
   }
 }
 
-/* Animazioni per la parte destra */
 @keyframes fadeInRight {
   from {
     opacity: 0;
-    transform: translateX(100vw); /* Fuori dallo schermo a destra */
+    transform: translateX(100vw);
   }
   to {
     opacity: 1;
@@ -22,7 +20,6 @@
   }
 }
 
-/* Animazioni per l'ingresso dal basso */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -34,11 +31,10 @@
   }
 }
 
-/* Animazioni per l'header della sezione feedback */
 @keyframes fadeInLeftAbout {
   from {
     opacity: 0;
-    transform: translateX(-100vw); /* Fuori dallo schermo a sinistra */
+    transform: translateX(-100vw);
   }
   to {
     opacity: 1;
@@ -46,11 +42,10 @@
   }
 }
 
-/* Animazioni per le card di feedback */
 @keyframes fadeInLeftCard {
   from {
     opacity: 0;
-    transform: translateX(-50px); /* Entra da sinistra */
+    transform: translateX(-50px);
   }
   to {
     opacity: 1;
@@ -61,7 +56,7 @@
 @keyframes fadeInRightCard {
   from {
     opacity: 0;
-    transform: translateX(50px); /* Entra da destra */
+    transform: translateX(50px);
   }
   to {
     opacity: 1;
@@ -72,7 +67,7 @@
 @keyframes fadeInUpCard {
   from {
     opacity: 0;
-    transform: translateY(50px); /* Entra dal basso */
+    transform: translateY(50px);
   }
   to {
     opacity: 1;
@@ -80,11 +75,10 @@
   }
 }
 
-/* Animazioni per la sezione blog */
 @keyframes fadeInLeftBlog {
   from {
     opacity: 0;
-    transform: translateX(-100vw); /* Entra da sinistra */
+    transform: translateX(-100vw);
   }
   to {
     opacity: 1;
@@ -95,7 +89,7 @@
 @keyframes fadeInRightBlog {
   from {
     opacity: 0;
-    transform: translateX(100vw); /* Entra da destra */
+    transform: translateX(100vw);
   }
   to {
     opacity: 1;
@@ -106,7 +100,7 @@
 @keyframes fadeInUpBlog {
   from {
     opacity: 0;
-    transform: translateY(50px); /* Entra dal basso */
+    transform: translateY(50px);
   }
   to {
     opacity: 1;
@@ -114,11 +108,10 @@
   }
 }
 
-/* Animazioni per la sezione loghi */
 @keyframes fadeInLogos {
   from {
     opacity: 0;
-    transform: translateY(30px); /* Entra dal basso */
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
@@ -126,7 +119,6 @@
   }
 }
 
-/* Nascondiamo inizialmente gli elementi */
 #home h1,
 #home p,
 #home button,
@@ -154,7 +146,6 @@
   visibility: hidden;
 }
 
-/* Animazione per l'header */
 #home h1.visible {
   animation: fadeInLeft 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
   visibility: visible;
@@ -172,7 +163,6 @@
   animation-delay: 0.6s;
 }
 
-/* Animazione per la sezione center */
 .center .left h1.visible,
 .center .left p.visible,
 .center .left .stat-box.visible,
@@ -185,7 +175,6 @@
   visibility: visible;
 }
 
-/* Elementi che entrano da destra */
 .center .right .writeline.visible,
 .center .right .calendar.visible,
 .navthree .writelineone h2.visible,
@@ -195,19 +184,16 @@
   visibility: visible;
 }
 
-/* Elemento che entra dal basso */
 .description .contenitore:nth-child(2).visible {
   animation: fadeInUp 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
   visibility: visible;
 }
 
-/* Animazione per l'header della sezione feedback */
 .feedback-section h2.visible {
   animation: fadeInLeftAbout 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
   visibility: visible;
 }
 
-/* Animazioni per le card di feedback */
 .feedback-section .feedback-card:nth-child(1).visible {
   animation: fadeInLeftCard 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
   visibility: visible;
@@ -223,7 +209,6 @@
   visibility: visible;
 }
 
-/* Ritardi progressivi per le card */
 .feedback-section .feedback-card:nth-child(1).visible {
   animation-delay: 0.3s;
 }
@@ -236,7 +221,6 @@
   animation-delay: 0.7s;
 }
 
-/* Animazioni per la sezione blog */
 .down h2.visible {
   animation: fadeInLeftBlog 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
   visibility: visible;
@@ -254,7 +238,6 @@
   animation-delay: 0.6s;
 }
 
-/* Animazione per i loghi */
 .loghi img.visible {
   animation: fadeInLogos 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
   visibility: visible;
