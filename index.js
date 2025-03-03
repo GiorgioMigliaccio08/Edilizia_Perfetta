@@ -32,7 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Selezioniamo tutti gli elementi da animare
   const headerElements = document.querySelectorAll(
     "#home h1, #home p, #home button"
   );
@@ -46,48 +45,40 @@ document.addEventListener("DOMContentLoaded", () => {
     ".description .contenitore:nth-child(2)"
   );
 
-  // Selezioniamo gli elementi della sezione feedback
   const feedbackHeader = document.querySelector(".feedback-section h2");
   const feedbackCards = document.querySelectorAll(
     ".feedback-section .feedback-card"
   );
 
-  // Selezioniamo gli elementi della sezione blog
   const blogTitle = document.querySelector(".down h2");
   const blogText = document.querySelector(".down p");
   const blogCEO = document.querySelector(".down .text");
 
-  // Selezioniamo gli elementi della sezione loghi
   const logos = document.querySelectorAll(".loghi img");
 
-  // Creiamo un IntersectionObserver
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("visible");
-          observer.unobserve(entry.target); // Interrompi l'osservazione dopo l'animazione
+          observer.unobserve(entry.target);
         }
       });
     },
     { threshold: 0.3 }
   );
 
-  // Osserviamo tutti gli elementi selezionati
   headerElements.forEach((el) => observer.observe(el));
   leftElements.forEach((el) => observer.observe(el));
   rightElements.forEach((el) => observer.observe(el));
   bottomElements.forEach((el) => observer.observe(el));
 
-  // Osserviamo la sezione feedback
   observer.observe(feedbackHeader);
   feedbackCards.forEach((el) => observer.observe(el));
 
-  // Osserviamo la sezione blog
   observer.observe(blogTitle);
   observer.observe(blogText);
   observer.observe(blogCEO);
 
-  // Osserviamo la sezione loghi
   logos.forEach((el) => observer.observe(el));
 });
