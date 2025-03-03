@@ -31,54 +31,27 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const headerElements = document.querySelectorAll(
-    "#home h1, #home p, #home button"
-  );
-  const leftElements = document.querySelectorAll(
-    ".center .left h1, .center .left p, .center .left .stat-box, .projectimg .leftone .left-section, .projectimg .leftone .right-section, .navthree p, .navfour .writeline h2, .description .contenitore:nth-child(3)"
-  );
-  const rightElements = document.querySelectorAll(
-    ".center .right .writeline, .center .right .calendar, .navthree .writelineone h2, .projectimg .rightone, .description .contenitore:nth-child(1)"
-  );
-  const bottomElements = document.querySelectorAll(
-    ".description .contenitore:nth-child(2)"
+document.addEventListener("DOMContentLoaded", function () {
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.2,
+  };
+
+  const fadeInElements = document.querySelectorAll(
+    "#home h1, #home p, #home button, .center .left h1, .center .left p, .center .left .stat-box, .center .right .writeline, .center .right .calendar, .navthree .writelineone h2, .navthree p, .projectimg .rightone, .projectimg .leftone .left-section, .projectimg .leftone .right-section, .navfour .writeline h2, .description .contenitore, .feedback-section h2, .feedback-section .feedback-card, .down h2, .down p, .down .text, .loghi img, #contact .foterlogo, #contact .reservation, #contact .iconsocial"
   );
 
-  const feedbackHeader = document.querySelector(".feedback-section h2");
-  const feedbackCards = document.querySelectorAll(
-    ".feedback-section .feedback-card"
-  );
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
 
-  const blogTitle = document.querySelector(".down h2");
-  const blogText = document.querySelector(".down p");
-  const blogCEO = document.querySelector(".down .text");
-
-  const logos = document.querySelectorAll(".loghi img");
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.3 }
-  );
-
-  headerElements.forEach((el) => observer.observe(el));
-  leftElements.forEach((el) => observer.observe(el));
-  rightElements.forEach((el) => observer.observe(el));
-  bottomElements.forEach((el) => observer.observe(el));
-
-  observer.observe(feedbackHeader);
-  feedbackCards.forEach((el) => observer.observe(el));
-
-  observer.observe(blogTitle);
-  observer.observe(blogText);
-  observer.observe(blogCEO);
-
-  logos.forEach((el) => observer.observe(el));
+  fadeInElements.forEach((element) => {
+    observer.observe(element);
+  });
 });
