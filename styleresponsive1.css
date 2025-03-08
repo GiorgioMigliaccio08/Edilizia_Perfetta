@@ -55,6 +55,7 @@
 
   .left h1 {
     font-size: 25px;
+    margin-top: 50px;
   }
 
   .left p {
@@ -82,15 +83,15 @@
   .line {
     width: 60px;
     height: 1px;
-    margin-left: 100px;
+    margin-left: 2px;
   }
 
   .calendar {
     width: 350px;
     height: 450px;
     display: flex;
-    margin-top: 50px;
-    margin-left: 180px;
+    margin-top: 30px;
+    margin-left: 220px;
     padding-right: 0px;
   }
 
@@ -218,7 +219,7 @@
   }
 
   .loghi {
-    margin-left: 70px;
+    margin-left: 170px;
   }
 
   .loghi img {
