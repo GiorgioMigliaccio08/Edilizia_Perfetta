@@ -30,6 +30,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+document.getElementById("footerLogo").addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
 
 document.addEventListener("DOMContentLoaded", function () {
   const observerOptions = {

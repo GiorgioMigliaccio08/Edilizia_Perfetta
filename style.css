@@ -33,7 +33,7 @@ header h1 {
   margin: 0 auto;
   font-family: "Montserrat", serif;
   position: relative;
-  transition: color 0.3s ease-in-out;
+  transition: color 0.5s ease-in-out;
 }
 
 header h1:hover {
@@ -624,10 +624,12 @@ section h3 {
 .loghi img {
   width: 150px;
   margin-right: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
 .loghi img:hover {
   width: 160px;
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.8));
 }
 
 /* FOOTER */
