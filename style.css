@@ -32,10 +32,13 @@ header h1 {
   font-size: 5.5rem;
   margin: 0 auto;
   font-family: "Montserrat", serif;
+  position: relative;
+  transition: color 0.3s ease-in-out;
 }
 
 header h1:hover {
-  font-size: 6.2rem;
+  color: #ffb900;
+  text-shadow: 0 0 15px #f8e71c;
 }
 
 .dot {
